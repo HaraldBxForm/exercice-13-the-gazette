@@ -16,8 +16,6 @@
         .text-content {
             color: white;
             position: absolute;
-            display: flex;
-            flex-direction: column;
             top: 40px;
             left: 60px;
 
@@ -27,6 +25,7 @@
 
             .article-date {
                 font-size: 1.125rem;
+                color: white;
             }
         }
         img {
