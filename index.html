@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.min.css">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome -->
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
     <title>The Gazette | Harald</title>
 </head>
@@ -14,20 +24,29 @@
             <img src="./img/core-img/logo.png" alt="">
         </div>
         <div class="header-bottom">
-            <!-- Nav Barre -->
-            <nav class="nav">
-                <a href="">Today</a>
-                <a href="">Politics</a>
-                <a href="">Lifestyle</a>
-                <a href="">Travel</a>
-                <a href="">Health</a>
-                <a href="">Entertainment</a>
-                <a href="">About us</a>
-                <a href="">Contact</a>
-            </nav>
-            <!-- Loupe -->
-            <div>
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="main-wrapper large-menu">
+                <!-- Nav Barre -->
+                <nav class="nav">
+                    <a href="" class="today">Today</a>
+                    <a href="">Politics</a>
+                    <a href="">Lifestyle</a>
+                    <a href="">Travel</a>
+                    <a href="">Health</a>
+                    <a href="">Entertainment</a>
+                    <a href="">About us</a>
+                    <a href="">Contact</a>
+                </nav>
+                <!-- Loupe -->
+                <div>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom small-menu">
+            <div class="main-wrapper">
+                <!-- Button Menu -->
+                <a href="" class="button-menu"><i class="fa-solid fa-bars"></i> Menu</a>
             </div>
         </div>
    </header>
@@ -37,13 +56,15 @@
         <section class="carrousel full-width">
 
             <!-- Article 1 -->
-            <div class="carrousel-article">
-                <!-- Category -->
-                <h3 class="category-label">Politics</h3>
-                <!-- Title -->
-                <a href="" class="article-title">Financiel Advices</a>
-                <!-- Date -->
-                <a href="" class="article-date">March 29, 2018</a>
+            <div class="carrousel-article carrousel-article-1">
+                <div class="flex-vertical">
+                    <!-- Category -->
+                    <h3 class="category-label">Politics</h3>
+                    <!-- Title -->
+                    <a href="" class="article-title">Financial Advices</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">March 29, 2018</a>
+                </div>
                 <!-- Image -->
                 <a href="">
                     <img src="./img/blog-img/16.jpg" alt="" class="article-image">
@@ -52,29 +73,33 @@
 
             <!-- Article 2 -->
             <div class="carrousel-article">
-                <!-- Category -->
-                <h3 class="category-label">Politics</h3>
-                <!-- Title -->
-                <a href="" class="article-title">Financiel Advices</a>
-                <!-- Date -->
-                <a href="" class="article-date">March 29, 2018</a>
+                <div class="flex-vertical">
+                    <!-- Category -->
+                    <h3 class="category-label">Politics</h3>
+                    <!-- Title -->
+                    <a href="" class="article-title">Financiel Advices</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">March 29, 2018</a>
+                </div>
                 <!-- Image -->
                 <a href="">
-                    <img src="./img/blog-img/16.jpg" alt="" class="article-image">
+                    <img src="./img/blog-img/2.jpg" alt="" class="article-image">
                 </a>
             </div>
 
             <!-- Article 3 -->
             <div class="carrousel-article">
-                <!-- Category -->
-                <h3 class="category-label">Politics</h3>
-                <!-- Title -->
-                <a href="" class="article-title">Financiel Advices</a>
-                <!-- Date -->
-                <a href="" class="article-date">March 29, 2018</a>
+                <div class="flex-vertical">
+                    <!-- Category -->
+                    <h3 class="category-label">Politics</h3>
+                    <!-- Title -->
+                    <a href="" class="article-title">Financiel Advices</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">March 29, 2018</a>
+                </div>
                 <!-- Image -->
                 <a href="">
-                    <img src="./img/blog-img/16.jpg" alt="" class="article-image">
+                    <img src="./img/blog-img/3.jpg" alt="" class="article-image">
                 </a>
             </div>
         </section>
@@ -83,16 +108,17 @@
 
         <section class="main-wrapper second-section">
             <!-- Left Part -->
-            <div>
+            <div class="second-section-left-part">
                 <div class="main-article article">
-                    <!-- Category -->
-                    <h3 class="category-label">Politics</h3>
-
-                    <!-- Title -->
-                    <a href="" class="carrousel-title">Financiel Advices</a>
-
-                    <!-- Date -->
-                    <a href="" class="carrousel-date">March 29, 2018</a>
+                    <div class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="category-label">Politics</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">Financial Advices</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">March 29, 2018</a>
+                        
+                    </div>
 
                     <!-- Image -->
                     <a href="">
@@ -112,7 +138,7 @@
                         </div>
 
                         <!-- Social Medias -->
-                        <div>
+                        <div class="social-medias">
                             <a href=""><i class="fa-brands fa-pinterest"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -128,66 +154,66 @@
 
                     <!-- Article 1 -->
                     <div class="horizontal-article article">
-                        <!-- Category -->
-                        <h3 class="category-label">News</h3>
-    
-                        <!-- Title -->
-                        <a href="" class="article-title">$250-million mansion is most expensive</a>
-    
-                        <!-- Date -->
-                        <a href="" class="article-date">March 29, 2016</a>
-    
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/2.jpg" alt="" class="article-image">
                         </a>
-                        
-                        <h6 class="comments">3 Comments</h6>
 
-                        <!-- Article Text -->
-                        <p class="article-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.
-                        </p>
+                        <div class="flex-vertical">
+                            <!-- Category -->
+                            <h3 class="category-label">News</h3>
+                            <!-- Title -->
+                            <a href="" class="article-title">$250-million mansion is most expensive</a>
+                            <!-- Date -->
+                            <a href="" class="article-date">March 29, 2016</a>
+                            <h6 class="comments">3 Comments</h6>
+
+                            <!-- Article Text -->
+                            <p class="article-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Article 2 -->
                     <div class="horizontal-article article">
-                        <!-- Category -->
-                        <h3 class="category-label">Life</h3>
-    
-                        <!-- Title -->
-                        <a href="" class="article-title">Homeless man steals $350,000</a>
-    
-                        <!-- Date -->
-                        <a href="" class="article-date">March 29, 2016</a>
-    
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/3.jpg" alt="" class="article-image">
                         </a>
-                        
-                        <h6 class="comments">3 Comments</h6>
 
-                        <!-- Article Text -->
-                        <p class="article-body">
-                            Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.
-                        </p>
+                        <div class="flex-vertical"> 
+                            <!-- Category -->
+                            <h3 class="category-label">Life</h3>
+                            <!-- Title -->
+                            <a href="" class="article-title">Homeless man steals $350,000</a>
+                            <!-- Date -->
+                            <a href="" class="article-date">March 29, 2016</a>
+                            <h6 class="comments">3 Comments</h6>
+
+                            <!-- Article Text -->
+                            <p class="article-body">
+                                Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Right Part -->
-            <div>
+            <div class="second-section-right-part">
                 <!-- Breaking News -->
                 <div class="breaking-news">
                     <h5>Breaking News</h5>
 
                     <!-- Article 1 -->
                     <div class="breaking-news-article">
-                        <!-- Category -->
-                        <h3 class="category-label">Breaking News</h3>
-                        <!-- Title -->
-                        <a href="" class="article-title">China leads new global skyscraper record</a>
+                        <div class="flex-vertical">
+                            <!-- Category -->
+                            <h3 class="category-label">Breaking News</h3>
+                            <!-- Title -->
+                            <a href="" class="article-title">China leads new global skyscraper record</a>
+                        </div>
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/bn-1.jpg" alt="" class="article-image">
@@ -196,10 +222,12 @@
 
                     <!-- Article 2 -->
                     <div class="breaking-news-article">
-                        <!-- Category -->
-                        <h3 class="category-label">Breaking News</h3>
-                        <!-- Title -->
-                        <a href="" class="article-title">China leads new global skyscraper record</a>
+                        <div class="flex-vertical">
+                            <!-- Category -->
+                            <h3 class="category-label">Breaking News</h3>
+                            <!-- Title -->
+                            <a href="" class="article-title">China leads new global skyscraper record</a>
+                        </div>
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/bn-2.jpg" alt="" class="article-image">
@@ -213,10 +241,12 @@
 
                     <!-- Article 1 -->
                     <div class="dont-miss-article">
-                        <!-- Title -->
-                        <a href="" class="article-title">EU council reunites</a>
-                        <!-- Date -->
-                        <a href="" class="article-date">Nov 29, 2017</a>
+                        <div  class="flex-vertical">
+                            <!-- Title -->
+                            <a href="" class="article-title">EU council reunites</a>
+                            <!-- Date -->
+                            <a href="" class="article-date">Nov 29, 2017</a>
+                        </div>
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/dm-1.jpg" alt="" class="article-image">
@@ -225,10 +255,12 @@
 
                     <!-- Article 2 -->
                     <div class="dont-miss-article">
-                        <!-- Title -->
-                        <a href="" class="article-title">China leads new global skyscraper record</a>
-                        <!-- Date -->
-                        <a href="" class="article-date">Nov 29, 2017</a>
+                        <div class="flex-vertical">
+                            <!-- Title -->
+                            <a href="" class="article-title">A new way to travel the world</a>
+                            <!-- Date -->
+                            <a href="" class="article-date">March 29, 2016</a>
+                        </div>
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/dm-2.jpg" alt="" class="article-image">
@@ -237,10 +269,12 @@
 
                     <!-- Article 3 -->
                     <div class="dont-miss-article">
-                        <!-- Title -->
-                        <a href="" class="article-title">China leads new global skyscraper record</a>
-                        <!-- Date -->
-                        <a href="" class="article-date">Nov 29, 2017</a>
+                        <div  class="flex-vertical">
+                            <!-- Title -->
+                            <a href="" class="article-title">Why choose a bank?</a>
+                            <!-- Date -->
+                            <a href="" class="article-date">March 29, 2016</a>
+                        </div>
                         <!-- Image -->
                         <a href="">
                             <img src="./img/blog-img/dm-3.jpg" alt="" class="article-image">
@@ -248,8 +282,370 @@
                     </div>
 
                 </div>
+
+                <div class="subscribe">
+                    <!-- Your Email -->
+                    <input type="text" placeholder="Your Email" />
+                    <!-- Button Subscribe -->
+                     <a href="" class="button button-subscribe">Subscribe</a>
+                </div>
             </div>
         </section>
+
+        <!-- Section 3 | Save The Environment -->
+         <section class="main-wrapper third-section">
+
+            <!-- Colonne 1 -->
+            <div class="third-section-column-list">
+
+                <!-- Article 1 -->
+                <div class="column-article">
+                    <div  class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Video</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">Save the eniroment with this step</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/12.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">Protest to be anounced in January</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">10 Bills that the Congress in voting</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">The narcissism of Donald Trump</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+            </div>
+
+            <!-- Colonne 2 -->
+             <div class="third-section-column-4-panel">
+                
+                <!-- Article 1 -->
+                <div class="column-article">
+                    <div class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Others</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">11 hottest toys for this holiday season</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/14.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="column-article">
+                    <div class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Video</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">Get this good feeling about life</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/15.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="column-article">
+                    <div class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Interview</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">Get this good feeling about life</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/16.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="column-article">
+                    <div  class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Video</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">11 hottest toys for this holiday season
+                        </a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/17.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+             </div>
+
+            <!-- Colonne 3 -->
+            <div class="third-section-column-list">
+
+                <!-- Article 1 -->
+                <div class="column-article">
+                    <div class="flex-vertical">
+                        <!-- Category -->
+                        <h3 class="article-label">Video</h3>
+                        <!-- Title -->
+                        <a href="" class="article-title">10 Bills that the Congress in voting</a>
+                        <!-- Date -->
+                        <a href="" class="article-date">Nov 29, 2017</a>
+                    </div>
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/13.jpg" alt="" class="article-image">
+                    </a>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">Blair can't save Britain from Brexit</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">Save the eniroment with this step</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="column-article flex-vertical">
+                    <!-- Title -->
+                    <a href="" class="article-title">Protest to be anounced in January</a>
+                    <!-- Date -->
+                    <a href="" class="article-date">Nov 29, 2017</a>
+                </div>
+            </div>
+         </section>
+
+         <!-- Section 4 | Show Suspended... -->
+         <section class="main-wrapper fourth-section">
+
+            <!-- Miniature 1 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Show suspended by PBS amid misconduct allegations</a>
+                <!-- Image -->
+                <div class="fourth-section-image-and-icon">
+                    <a href="">
+                        <img src="./img/blog-img/4.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 2 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Parents to Congress</a>
+                <!-- Image -->
+                <div class="fourth-section-image-and-icon">
+                    <a href="">
+                        <img src="./img/blog-img/5.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 3 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Third Buy Alert for This “Millionaire Maker” Stock</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/6.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 4 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">The Chicago Mercantile Exchange is set to begin</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/7.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 5 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Trading bitcoin futures</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/8.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 6 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Are ‘Micro-Mansions’ the Next Big Thing?</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/9.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 7 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">McKinney’s target market</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/10.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <!-- Miniature 8 -->
+            <div class="fourth-section-article">
+                <!-- Title -->
+                <a href="" class="article-title">Australian Property Prices Remain Flat</a>
+                <div class="fourth-section-image-and-icon">
+                    <!-- Image -->
+                    <a href="">
+                        <img src="./img/blog-img/11.jpg" alt="" class="article-image">
+                    </a>
+                    <!-- Play Icon -->
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+         </section>
    </main>
+
+   <footer>
+        <!-- Footer Background Image -->
+        <img src="./img/bg-img/4.jpg" alt="">
+
+        <!-- Titles & Links -->
+        <div class="main-wrapper footer-wrapper">
+
+            <div class="footer-column">
+                <h4>Régions</h4>
+                <a href="">U.S.</a>
+                <a href="">Africa</a>
+                <a href="">Americas</a>
+                <a href="">Asia</a>
+                <a href="">China</a>
+                <a href="">Europe</a>
+                <a href="">Middle</a>
+                <a href="">East</a>
+                <a href="">Opinion</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Fashion</h4>
+                <a href="">Election 2016</a>
+                <a href="">Nation</a>
+                <a href="">World</a>
+                <a href="">Our Team</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Politics</h4>
+                <a href="">Business</a>
+                <a href="">Markets</a>
+                <a href="">Tech</a>
+                <a href="">Luxury</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Featured</h4>
+                <a href="">Football</a>
+                <a href="">Golf</a>
+                <a href="">Tennis</a>
+                <a href="">Motorsport</a>
+                <a href="">Horseracing</a>
+                <a href="">Equestrian</a>
+                <a href="">Sailing</a>
+                <a href="">Skiing</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>FAQ</h4>
+                <a href="">Aviation</a>
+                <a href="">Business</a>
+                <a href="">Traveller</a>
+                <a href="">Destinations</a>
+                <a href="">Features</a>
+                <a href="">Food/Drink</a>
+                <a href="">Hotels</a>
+                <a href="">Partner Hotels</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>+ More</h4>
+                <a href="">Fashion</a>
+                <a href="">Design</a>
+                <a href="">Architecture</a>
+                <a href="">Arts</a>
+                <a href="">Autos</a>
+                <a href="">Luxury</a>
+            </div>
+
+        </div>
+
+        <div class="copyrights">
+            <p>Copyright ©2025 All rights reserved | This template is made with  by Colorlib</p>
+        </div>
+   </footer>
 </body>
 </html>

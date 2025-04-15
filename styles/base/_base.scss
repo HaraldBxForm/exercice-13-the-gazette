@@ -1,0 +1,54 @@
+// Typography
+body {
+    font-family: "Roboto", sans-serif;
+    color: #3a3a3a;
+}
+
+.article-title {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+.article-date {
+    font-style: italic;
+    color: #838383;
+    font-weight: 300;
+}
+
+.article-body {
+    color: #9f9f9f;
+    font-weight: 300;
+}
+
+// Main Wrapper
+.main-wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media screen and (max-width:767px) {
+        width: 540px;
+    }
+}
+
+// Articles General
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+.category-label {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+// Links
+a {
+    transition: 0.3s all ease-in-out;
+}

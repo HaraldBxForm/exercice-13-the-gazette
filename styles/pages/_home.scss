@@ -1,0 +1,109 @@
+// Section 1 | Carrousel
+.carrousel {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    .carrousel-article {
+        position: relative;
+        grid-column: span 4;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+
+        @media screen and (max-width:990px) {
+            grid-column: span 12;
+        }
+
+        .text-content {
+            color: white;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 40px;
+            left: 60px;
+
+            .article-title {
+                font-size: 2.25rem;
+            }
+
+            .article-date {
+                font-size: 1.125rem;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Section 2 
+.second-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
+
+    .second-section-left-part {
+        grid-column: span 9;
+
+        @media screen and (max-width:990px) {
+            grid-column: span 12;
+        }
+    }
+
+    .second-section-right-part {
+        grid-column: span 3;
+
+        @media screen and (max-width:990px) {
+            grid-column: span 12;
+        }
+    }
+}
+
+.main-article {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    .article-title {
+        font-size: 3rem;
+        margin-block-end: 0.938rem;
+    }
+
+    .article-date {
+        font-size: 1.125rem;
+    }
+
+    .article-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+            padding: 0.7rem 1rem;
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: normal; 
+            text-transform: uppercase;
+            border: 1px solid #3a3a3a;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .button:hover {
+            color: red;
+            border-color: red;
+        }
+
+        .social-medias {
+            color: #d3d3d3;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 0.8rem;
+
+            a:hover {
+                color: red;
+            }
+        }
+    }
+}
