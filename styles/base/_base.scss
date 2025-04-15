@@ -6,7 +6,7 @@ body {
 
 .article-title {
     font-family: "PT Serif", serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal; 
 }
 
@@ -21,11 +21,23 @@ body {
     font-weight: 300;
 }
 
+p {
+    margin: 1rem 0;
+}
+
 // Main Wrapper
 .main-wrapper {
     width: 1140px;
     margin: 0 auto;
     padding: 1rem;
+
+    @media screen and (max-width:1200px) {
+        width: 960px;
+    }
+
+    @media screen and (max-width:990px) {
+        width: 690px;
+    }
 
     @media screen and (max-width:767px) {
         width: 540px;
@@ -33,11 +45,13 @@ body {
 }
 
 // Articles General
+
 .flex-vertical {
     display: flex;
     flex-direction: column;
 }
 .category-label {
+    margin-bottom: 0.938rem;
     width: fit-content;
     font-size: 12px;
     font-weight: 700;
@@ -46,6 +60,14 @@ body {
     text-align: center;
     color: white;
     background-color: red;
+}
+
+.section-title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 // Links

@@ -1,0 +1,92 @@
+// Footer 
+footer {
+    color: white;
+    padding: 3rem 0 0 0;
+    position: relative;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal; 
+    
+    .footer-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .footer-wrapper {
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+
+    .footer-column {
+        margin-bottom: 3rem;
+        grid-column: span 2;
+
+        @media screen and (max-width:990px) {
+            grid-column: span 4;
+        }
+
+        @media screen and (max-width:767px) {
+            grid-column: span 6;
+        }
+
+        @media screen and (max-width:575px) {
+            grid-column: span 12;
+        }
+
+        gap: 0.9rem;
+
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        a {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        a:hover {
+            translate: 1rem 0;
+            color: white;
+        }
+    }
+
+  }
+
+  .copyrights {
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    border-top: 1px solid #d7d7d7;
+}
