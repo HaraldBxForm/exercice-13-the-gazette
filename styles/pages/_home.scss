@@ -129,6 +129,10 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
 
+    @media screen and (max-width:767px) {
+        gap: 0;
+    }
+
     .image-article {
         grid-column: span 4;
         aspect-ratio: 1/1;
@@ -265,6 +269,10 @@
     gap: 2rem;
     grid-template-columns: repeat(12,1fr);
 
+    @media screen and (max-width:767px) {
+        gap: 0;
+    }
+
     .third-section-column-list, .third-section-column-4-panel {
         grid-column: span 12;
 
@@ -326,6 +334,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
+
+    @media screen and (max-width:767px) {
+        gap: 0;
+    }
 
     .fourth-section-article {
         grid-column: span 12;
