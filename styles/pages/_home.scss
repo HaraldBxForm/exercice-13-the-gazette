@@ -224,6 +224,7 @@
     grid-template-columns: repeat(12,1fr);
     align-items: center;
 
+
     .flex-vertical {
         order: 1;
         grid-column: span 8;
@@ -341,6 +342,7 @@
 
     .fourth-section-article {
         grid-column: span 12;
+        margin-bottom: 2rem;
 
         @media screen and (min-width:767px) {
             grid-column: span 3;
