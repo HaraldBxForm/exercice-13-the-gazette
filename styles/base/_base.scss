@@ -25,22 +25,31 @@ p {
     margin: 1rem 0;
 }
 
+.secondary-title {
+    font-family: "PT Serif", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
 // Main Wrapper
 .main-wrapper {
     width: 1140px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 2rem;
 
     @media screen and (max-width:1200px) {
         width: 960px;
+        padding: 2rem;
     }
 
     @media screen and (max-width:990px) {
         width: 690px;
+        padding: 2rem;
     }
 
     @media screen and (max-width:767px) {
-        width: 540px;
+        width: 100%;
+        padding: 2rem;
     }
 }
 
@@ -73,4 +82,22 @@ p {
 // Links
 a {
     transition: 0.3s all ease-in-out;
+}
+
+// Templates
+
+// Grey Banner
+.grey-banner {
+    background-color: #efefef;
+
+    .flex-x {
+        padding: 3.125rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .grey-banner-date {
+            font-style: italic;
+        }
+    }
 }
