@@ -56,7 +56,7 @@
     grid-template-columns: repeat(12, 1fr);
 
     @media screen and (max-width:767px) {
-        gap: 0;
+        column-gap: 0;
     }
 
     .second-section-left-part {
@@ -141,11 +141,7 @@
     gap: 2rem;
 
     @media screen and (max-width:767px) {
-        gap: 0;
-
-        .category-label {
-            margin-top: 2rem;
-        }
+        column-gap: 0;
     }
 
     .image-article {
@@ -286,7 +282,7 @@
     grid-template-columns: repeat(12,1fr);
 
     @media screen and (max-width:767px) {
-        gap: 0;
+        column-gap: 0;
     }
 
     .third-section-column-list, .third-section-column-4-panel {
@@ -352,12 +348,11 @@
     gap: 2rem;
 
     @media screen and (max-width:767px) {
-        gap: 0;
+        column-gap: 0;
     }
 
     .fourth-section-article {
         grid-column: span 12;
-        margin-bottom: 2rem;
 
         @media screen and (min-width:767px) {
             grid-column: span 3;
